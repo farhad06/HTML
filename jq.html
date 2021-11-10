@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	<center><h1><u>It is jQuery practical</u></h1></center>
+	
+	<div id="demoid"></div><br><br>
+	<div class="demo">I am Farhad</div>
+	<h3 class="heading">jQuery Selector</h3>
+	<ul>
+		<li>Tea</li>
+		<li>Coffie</li>
+		<li>Milk</li>
+		<li>Juice</li>
+		<li>Drinks</li>
+	</ul>
+<!-- 	<ul>
+		<li><a href="https://google.com" target="_blank"><h4>Google</h4></a></li>
+		<li><a href="https://yahoo.com" target="_self"><h4>Yahoo!</h4></a></li>
+		<li><a href="https://facebok.com" target="_blank"><h4>Facebook</h4></a></li>
+	</ul> -->
+	<div id="demo">
+		<h3>Edureka!</h3>
+		<p>It is a paragraph</p>
+		<input type="text" name="demoinput" id="demoinput" placeholder=" enter username"><br><br>
+		<input type="submit" name="submit" id="button" value="Click Me">
+	</div>
+	<a target="_blank" href="https://www.google.com" >Google</a>
+		<button id='buttoncopy'>Copy</button>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#demoid").text("It is a jQuery Code");
+		$(".demo").css("color","red");
+		$('h1').css("color","indigo");
+		$('.heading').css("color",'orange');
+		$('li:first').css('color','green');
+		//var b=$('a').last('li').text();
+		
+		 var c=('HTML code is:' + $('#demo').html());
+		//console.log(c);
+		$('#buttoncopy').click(function(){
+			//$('a').clone().insertAfter('a');
+		});
+
+	});
+</script>
+</html>
